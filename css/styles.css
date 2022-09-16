@@ -1,0 +1,103 @@
+/* General Stylings */
+
+body{
+    background-color: white;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.logo{
+    margin: 0;
+}
+
+.linkList{
+    display: flex;
+    margin-left: auto;
+    
+}
+
+.navItem{
+    margin: 0 15px;
+
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+/* Bottom Navigation Bar */
+
+.altNavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.toTop {
+    display: flex;
+}
+
+/* General Content */
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 7%;
+}
+
+.contentLeft{
+    width: 500px;
+}
+
+.contentRight{
+    width: 500px;
+}
+
+.header{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Portfolio Content */
+
+.cardDeck{
+    display: flex;
+    justify-content: center;
+    padding: 2% 3%;
+}
+
+.card{
+    height: 500px;
+    width: 400px;
+    margin: 2%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* Contact Me Content */
+
+.formContent{
+    display: flex;
+    justify-content: center;
+
+}
+
+.collumn{
+    margin: 2%;
+    flex-direction: column
+}
+
+.inputItem{
+    margin-top: 10px;
+}
