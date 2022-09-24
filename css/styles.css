@@ -1,7 +1,7 @@
 /* General Stylings */
 
 body{
-    background-color: white;
+    background-color: #EEEEEE;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -13,10 +13,12 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 40px;
+    background-color: #232931;
 }
 
 .logo{
     margin: 0;
+    color: #EEEEEE;
 }
 
 .linkList{
@@ -31,7 +33,7 @@ body{
 }
 
 a{
-    color:black;
+    color:#EEEEEE;
     text-decoration: none;
 }
 
@@ -52,16 +54,17 @@ a{
 
 .content{
     display: flex;
-    justify-content: space-between;
-    padding: 10% 7%;
+    justify-content: space-evenly;
+    padding: 200px 10%;
+    gap: 375px;
 }
 
 .contentLeft{
-    width: 500px;
+    width: 550px;
 }
 
 .contentRight{
-    width: 500px;
+    width: 550px;
 }
 
 .header{
@@ -69,20 +72,71 @@ a{
     font-family: 'Montserrat', sans-serif;
 }
 
+hr{
+    width:70%;
+}
+
+
+/* About Me */
+
+.skills{
+    background-color: #393E46;
+    color: white;
+}
+
+.fun-facts{
+    background-color: #3D8361;
+    color: white;
+}
+
 /* Portfolio Content */
 
 .cardDeck{
     display: flex;
     justify-content: center;
-    padding: 2% 3%;
+    margin:0;
+    gap: 30px;
+    background-color: #393E46;
 }
 
 .card{
-    height: 500px;
+    display:flex;
+    flex-direction: column;
+    height: 600px;
     width: 400px;
-    margin: 2%;
-    background-color: black;
+    margin: 100px 0;
+    background-color: #3D8361;
     border-radius: 10px;
+    
+}
+
+.img-container{
+    display: flex;
+    height:300px;
+    width: 350px;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.image{
+    border-radius:10px;
+    height:300px;
+    width: 350px;
+    object-fit: cover;
+    
+}
+
+.skills-used{
+    margin: 0 30px;
+}
+
+.card-heading{
+    color: #232931;
+}
+
+.card-list{
+    color: #393E46;
 }
 
 /* Contact Me Content */
@@ -90,7 +144,9 @@ a{
 .formContent{
     display: flex;
     justify-content: center;
-
+    background-color: #393E46;
+    height: 686px;
+    color:#EEEEEE;
 }
 
 .collumn{
@@ -100,4 +156,15 @@ a{
 
 .inputItem{
     margin-top: 10px;
+}
+
+.contact-text{
+    text-align: center;
+}
+
+.btn{
+    background-color: #3D8361;
+    border-style: none;
+    padding: 10px 15px;
+    border-radius: 999px;
 }
