@@ -44,6 +44,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 40px;
+    background-color: #232931;
 }
 
 .toTop {
@@ -55,16 +56,18 @@ a{
 .content{
     display: flex;
     justify-content: space-evenly;
-    padding: 200px 10%;
-    gap: 375px;
+    align-items: center;
+    padding: 5%;
+
+    height: 400px;
 }
 
 .contentLeft{
-    width: 550px;
+    width: 350px;
 }
 
 .contentRight{
-    width: 550px;
+    width: 350px;
 }
 
 .header{
@@ -85,8 +88,7 @@ hr{
 }
 
 .fun-facts{
-    background-color: #3D8361;
-    color: white;
+    background-color: white;
 }
 
 /* Portfolio Content */
@@ -105,7 +107,7 @@ hr{
     height: 600px;
     width: 400px;
     margin: 100px 0;
-    background-color: #3D8361;
+    background-color: #232931;
     border-radius: 10px;
     
 }
@@ -132,11 +134,11 @@ hr{
 }
 
 .card-heading{
-    color: #232931;
+    color: #EEEEEE;
 }
 
 .card-list{
-    color: #393E46;
+    color: #EEEEEE;
 }
 
 /* Contact Me Content */
@@ -145,7 +147,7 @@ hr{
     display: flex;
     justify-content: center;
     background-color: #393E46;
-    height: 686px;
+    /* height: 686px; */
     color:#EEEEEE;
 }
 
@@ -167,4 +169,31 @@ hr{
     border-style: none;
     padding: 10px 15px;
     border-radius: 999px;
+}
+
+@media(max-width: 800px){
+
+.content{
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    height: fit-content;
+}
+.cardDeck{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px auto;
+}
+.card{
+    margin: 20px auto;
+}
+
+.formContent{
+    flex-direction: column;
+    align-items: center;
+}
+
+.collumn{
+    width: 462.8px;
+}
 }
