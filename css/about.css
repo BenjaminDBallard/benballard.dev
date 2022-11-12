@@ -1,0 +1,109 @@
+.about {
+    background-image: url('../Images/background.jfif');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2vh;
+    color: white;
+    /* padding: 5rem; */
+    gap: 1.5vh;
+    /* background-color: #202020; */
+    width: 60vh;
+    align-items: center;
+}
+
+.square {
+    position: relative;
+    width: 75vh;
+    background-color: #202020;
+    opacity: .75;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.aboutH2 {
+    font-size: 5vh;
+    text-align: center;
+    color: #61DBFB;
+    font-weight: 900;
+}
+
+.aboutH3 {
+    font-size: 4vh;
+    text-align: center;
+    padding: 3vh 0;
+    color: white;
+    font-weight: 900;
+}
+
+.aboutListBox {
+    display: flex;
+    gap: 8vh;
+}
+
+.aboutList {
+    font-size: 4vh;
+}
+
+.skillList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2vh;
+    list-style: none;
+}
+
+
+@media (max-aspect-ratio: 1/1) {
+
+    /* Portrait */
+    .aboutContainer {
+        font-size: 2vw;
+        gap: 1.5vw;
+        width: 60vw;
+
+    }
+
+    .square {
+        width: 75vw;
+    }
+
+    .aboutH2 {
+        font-size: 5vw;
+    }
+
+    .aboutH3 {
+        font-size: 4vw;
+        padding: 3vw 0;
+    }
+
+    .aboutListBox {
+        gap: 8vw;
+    }
+
+    .aboutList {
+        font-size: 4vw;
+    }
+
+    .skillList {
+        gap: 2vw;
+    }
+}

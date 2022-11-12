@@ -1,0 +1,246 @@
+.resumeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #202020; */
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+}
+
+.resumeArea {
+    display: flex;
+    flex-direction: row;
+}
+
+.resumeProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 34vh;
+    padding: 2vh 0;
+    background-color: #3a3a3a;
+    box-shadow: -2vh -2vh #2c2c2c;
+}
+
+.photoBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vh;
+    height: 30vh;
+    background-color: #2c2c2c;
+    box-shadow: -2vh -2vh #202020,
+        inset -2vh -2vh #2c2c2c,
+        inset -4vh -4vh #202020,
+        inset -6vh -6vh #2c2c2c,
+        inset -8vh -8vh #202020,
+        inset -10vh -10vh #2c2c2c,
+        inset -12vh -12vh #202020,
+        inset -14vh -14vh #2c2c2c,
+        inset -16vh -16vh #202020;
+
+}
+
+.profileImg {
+    width: 15vh;
+    border: #202020 solid 2vh;
+    border-radius: 999px;
+}
+
+.linkBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.profileName {
+    font-size: 3vh;
+    color: #61DBFB;
+}
+
+.description {
+    color: #ffffff;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.resumeLinks {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-size: 4vh;
+    gap: 3vh;
+
+}
+
+.fa-github {
+    color: #ffffff;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+}
+
+.fa-envelope {
+    color: #1445a0;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-envelope:hover {
+    color: #61DBFB;
+    font-size: 4.5vh;
+}
+
+.resumeH2 {
+    font-size: 5vh;
+    font-weight: 900;
+    color: #61DBFB;
+    padding: 1vh;
+}
+
+.resumeH3 {
+    font-size: 2vh;
+    color: orange;
+}
+
+.resumeH4 {
+    font-size: 1.75vh;
+    color: white;
+}
+
+.resumeH5 {
+    font-size: 1.5vh;
+    color: #c5c5c5;
+}
+
+.resumeText {
+    font-size: 1.5vh;
+    color: #979797;
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+    border: 1px solid #3a3a3a;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+    padding: 2vh;
+    background-color: #2c2c2c;
+}
+
+.icon {
+    color: orange;
+    font-size: 3vh;
+}
+
+.resume-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 2vh 0;
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+
+    .resumeProfile {
+        display: none;
+    }
+
+    .resumeH2 {
+        text-align: center;
+    }
+
+}
+
+@media (max-aspect-ratio: 8/7) {
+
+    .resumeProfile {
+        display: none;
+    }
+
+    .profileName {
+        font-size: 3vw;
+    }
+
+    .resumeH2 {
+        font-size: 5vw;
+        padding: 1vw;
+        text-align: center;
+    }
+
+    .resumeH3 {
+        font-size: 2vw;
+    }
+
+    .resumeH4 {
+        font-size: 1.75vw;
+    }
+
+    .resumeH5 {
+        font-size: 1.5vw;
+    }
+
+    .resumeText {
+        font-size: 1.5vw;
+    }
+
+    .col {
+        width: 30vw;
+        padding: 2vw;
+    }
+
+    .icon {
+        font-size: 3vw;
+    }
+
+    .resume-items {
+        gap: 2vw;
+        padding: 2vw 0;
+    }
+}

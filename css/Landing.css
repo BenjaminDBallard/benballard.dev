@@ -1,0 +1,186 @@
+.landing {
+    background-image: url('../Images/background.jfif');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    color: white;
+    left: 30vh;
+    top: 30vh;
+    gap: 2vh;
+
+}
+
+.heroH1 {
+    font-size: 6vh;
+}
+
+.heroH2 {
+    font-size: 5vh;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+
+.name {
+    color: #61DBFB;
+}
+
+.heroList {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactBtn {
+    width: 18vh;
+    height: 6vh;
+    cursor: pointer;
+    background: #61DBFB;
+    border: 2px solid #61DBFB;
+    outline: none;
+}
+
+svg {
+    width: 18vh;
+    height: 6vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.contactBtn:hover {
+    transition: 1s ease-in-out;
+    background: transparent;
+}
+
+.contactBtn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.contactBtn span {
+    color: white;
+    font-size: 3vh;
+    font-weight: 900;
+}
+
+.landingIcons {
+    font-size: 6vh;
+}
+
+.fa-html5 {
+    color: #E44D26;
+}
+
+.fa-css3 {
+    color: #2091EB;
+}
+
+.fa-js {
+    color: #F0DB4F;
+}
+
+.fa-react {
+    color: #61DBFB;
+}
+
+
+.fa-node-js {
+    color: #7FC728;
+}
+
+.fa-database {
+    color: #D06F30;
+}
+
+
+@media (max-aspect-ratio: 1/1) {
+
+    /* Portrait */
+    .heroContainer {
+        gap: 2vw;
+        position: relative;
+        top: 0%;
+        left: 0;
+
+    }
+
+    .heroH1 {
+        font-size: 8vw;
+    }
+
+    .heroH2 {
+        font-size: 6vw;
+    }
+
+    .contactBtn {
+        width: 22vw;
+        height: 8vw;
+    }
+
+    svg {
+        width: 22vw;
+        height: 8vw;
+    }
+
+    .contactBtn span {
+        font-size: 4vw;
+    }
+
+    .landingIcons {
+        font-size: 8vw;
+    }
+}

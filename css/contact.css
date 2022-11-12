@@ -1,0 +1,277 @@
+.contact {
+    background-image: url('../Images/background.jfif');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    position: relative;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2vh;
+    justify-content: center;
+}
+
+.contactH2 {
+    font-size: 5vh;
+    font-weight: 900;
+    padding-bottom: 4vh;
+
+}
+
+.contactMsgSq {
+    display: flex;
+    flex-direction: column;
+    background-color: #202020;
+    width: 65vh;
+    height: 40vh;
+    opacity: .75;
+}
+
+.textarea {
+    margin: 0 2vh;
+    height: 32vh;
+    resize: none;
+    font-size: 2vh;
+}
+
+.contactInfoSq {
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+    height: 20vh;
+    background-color: #202020;
+    opacity: .75;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactLabel {
+    padding: 1vh 2vh;
+    font-size: 2vh;
+}
+
+.contactInput {
+    margin: 0 2vh;
+    height: 4vh;
+    font-size: 2vh;
+    border: none;
+}
+
+.btnContainer {
+    position: absolute;
+    bottom: 15vh;
+}
+
+.contactSubmitBtn {
+    width: 18vh;
+    height: 6vh;
+    cursor: pointer;
+    background: #61DBFB;
+    border: 2px solid #61DBFB;
+    outline: none;
+}
+
+.contactSvg {
+    width: 18vh;
+    height: 6vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.contactSubmitBtn:hover {
+    transition: 1s ease-in-out;
+    background: transparent;
+}
+
+.contactSubmitBtn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.contactSubmitBtn span {
+    color: white;
+    font-size: 3vh;
+    font-weight: 900
+}
+
+.result {
+    font-size: 2vh;
+    font-weight: 900;
+}
+
+.textGray {
+    color: #202020;
+}
+
+.textGreen {
+    color: #005c00;
+}
+
+.textRed {
+    color: #790000;
+}
+
+
+
+
+@media (max-aspect-ratio: 8/7) {
+
+    /* Portrait */
+    .contactContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    .contactH2 {
+        color: #61DBFB;
+        font-size: 5vw;
+        padding-bottom: 4vw;
+
+    }
+
+    .contactMsgSq {
+        width: 65vw;
+        height: 40vw;
+    }
+
+    .textarea {
+        margin: 0 2vw;
+        height: 32vw;
+    }
+
+    .contactInfoSq {
+        flex-direction: row;
+        width: 65vw;
+        height: 10vw;
+        background-color: #202020;
+        opacity: .75;
+    }
+
+    .contactLabel {
+        padding: 1vw 2vw;
+        font-size: 2vw;
+    }
+
+    .contactInput {
+        margin: 0 2vw;
+        height: 4vw;
+        font-size: 2vw;
+    }
+
+    .btnContainer {
+        position: relative;
+        bottom: -4vw;
+    }
+
+    .contactSubmitBtn {
+        width: 18vw;
+        height: 6vw;
+    }
+
+    .contactSvg {
+        width: 18vw;
+        height: 6vw;
+    }
+
+    .contactSubmitBtn span {
+        font-size: 3vw;
+    }
+
+    .infoBox {
+        width: 37.5vw;
+    }
+
+    .result {
+        font-size: 2vw;
+    }
+
+}
+
+@media (max-width: 1280px) and (max-height: 800px) {
+
+    .contactContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .contactH2 {
+        font-size: 5vh;
+        padding-bottom: 4vh;
+
+    }
+
+    .contactMsgSq {
+        width: 65vh;
+        height: 40vh;
+    }
+
+    .textarea {
+        margin: 0 2vh;
+        height: 32vh;
+    }
+
+    .contactInfoSq {
+        flex-direction: row;
+        width: 65vh;
+        height: 10vh;
+    }
+
+    .contactLabel {
+        padding: 1vh 2vh;
+        font-size: 2vh;
+    }
+
+    .contactInput {
+        margin: 0 2vh;
+        height: 4vh;
+        font-size: 2vh;
+    }
+
+    .btnContainer {
+        position: relative;
+        bottom: -4vh;
+    }
+
+    .contactSubmitBtn {
+        width: 18vh;
+        height: 6vh;
+    }
+
+    .contactSvg {
+        width: 18vh;
+        height: 6vh;
+    }
+
+    .contactSubmitBtn span {
+        font-size: 3vh;
+    }
+
+    .infoBox {
+        width: 37.5vh;
+    }
+
+    .result {
+        font-size: 2vh;
+    }
+
+}
