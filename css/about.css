@@ -2,7 +2,7 @@
     background-image: url('../Images/background.jfif');
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh - 51px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
     /* padding: 5rem; */
     gap: 1.5vh;
     /* background-color: #202020; */
-    width: 60vh;
+    width: 65vh;
     align-items: center;
 }
 
@@ -78,12 +78,12 @@
     .aboutContainer {
         font-size: 2vw;
         gap: 1.5vw;
-        width: 60vw;
+        width: 80vw;
 
     }
 
     .square {
-        width: 75vw;
+        width: 90vw;
     }
 
     .aboutH2 {
