@@ -2,7 +2,7 @@
     background-image: url('../Images/background.jfif');
     background-position: center;
     background-size: cover;
-    height: calc(100vh - 51px);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +12,7 @@
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
     color: white;
+    z-index: 1;
 }
 
 .contactContainer {

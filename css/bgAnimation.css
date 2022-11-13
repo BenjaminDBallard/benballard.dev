@@ -10,15 +10,21 @@
     right: -50%;
     top: 0;
     z-index: -1;
+    height: 100vh;
+    
 }
 
 .bg2 {
     animation-direction: alternate-reverse;
     animation-duration: 8s;
+    z-index: -1;
+    height: 100vh;
 }
 
 .bg3 {
     animation-duration: 10s;
+    z-index: -1;
+    height: 100vh;
 }
 
 @keyframes slide {

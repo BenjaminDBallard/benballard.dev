@@ -2,7 +2,7 @@
     background-image: url('../Images/background.jfif');
     background-position: center;
     background-size: cover;
-    height: calc(100vh - 51px);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +10,7 @@
     text-align: start;
     position: relative;
     background-attachment: fixed;
+    z-index: 1;
 }
 
 .aboutContainer {
