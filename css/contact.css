@@ -1,7 +1,7 @@
 .contact {
-    background-image: url('../Images/background.jfif');
+    /* background-image: url('../Images/background.jfif');
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -12,6 +12,14 @@
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
     color: white;
+}
+
+.background-contact {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+
 }
 
 .contactContainer {
